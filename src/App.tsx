@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router style={{ height: '100%' }}>
       <Home path="/" />
       <Contact path="/contact.html" />
     </Router>
