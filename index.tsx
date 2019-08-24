@@ -6,6 +6,7 @@ import ReactDomServer from 'react-dom/server';
 
 import Introduction from './src/pages/Introduction';
 import Home from './src/pages/Home';
+import Carte from './src/pages/Carte';
 import Contact from './src/pages/Contact';
 
 const PUBLIC_DIR = path.resolve(__dirname, 'public');
@@ -16,6 +17,7 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 const pages = [
   { Component: Introduction, filename: 'index.html' },
   { Component: Home, filename: 'presentation.html' },
+  { Component: Carte, filename: 'carte.html' },
   { Component: Contact, filename: 'contact.html' },
 ];
 

@@ -4,7 +4,7 @@ import { RouteComponentProps } from '@reach/router';
 import PageLayout from '../components/PageLayout';
 
 const Introduction: React.FC<RouteComponentProps> = () => (
-  <PageLayout>
+  <PageLayout page="intro">
     <div>Introduction</div>
   </PageLayout>
 );

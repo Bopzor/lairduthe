@@ -1,8 +1,14 @@
 import React from 'react';
+
 import Link from './Link';
 
-const Header: React.FC = () => (
+type HeaderProps = {
+  page: string;
+};
+
+const Header: React.FC<HeaderProps> = ({ page }) => (
   <header>
+
     <div
       style={{
         width: '100%',
@@ -25,7 +31,8 @@ const Header: React.FC = () => (
 
     <nav
       style={{
-        marginTop: 10,
+        margin: '10px 0 30px 0',
+        paddingBottom: 10,
         borderTop: '2px solid #999',
         borderBottom: '2px solid #999',
         display: 'flex',
@@ -33,9 +40,27 @@ const Header: React.FC = () => (
         fontSize: 30,
       }}
     >
-      <Link href="/presentation.html" style={{ marginBottom: 10 }}>Présentation</Link>
-      <Link href="/carte.html" style={{ marginBottom: 10 }}>Carte des thés</Link>
-      <Link href="/contact.html" style={{ marginBottom: 10 }}>Contact</Link>
+      <Link
+        href="/presentation.html"
+        active={page === 'home'}
+        style={{ textDecoration: 'none' }}
+        >
+        Présentation
+      </Link>
+      <Link
+        href="/carte.html"
+        active={page === 'carte'}
+        style={{ textDecoration: 'none' }}
+        >
+        Carte des thés
+      </Link>
+      <Link
+        href="/contact.html"
+        active={page === 'contact'}
+        style={{ textDecoration: 'none' }}
+      >
+        Contact
+      </Link>
     </nav>
 
   </header>

@@ -2,6 +2,7 @@ import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
 import PageLayout from '../components/PageLayout';
+import Link from '../components/Link';
 
 const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' + [
   'bbox=0.10519623756408693%2C49.490514166900724%2C0.11231482028961183%2C49.49363277212335',
@@ -10,7 +11,7 @@ const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' +
 ].join('&');
 
 const Contact: React.FC<RouteComponentProps> = () => (
-  <PageLayout>
+  <PageLayout page="contact">
 
     <div
       style={{
@@ -30,15 +31,31 @@ const Contact: React.FC<RouteComponentProps> = () => (
           <div>76600 Le Havre</div>
         </div>
         <div style={{ marginTop: 15 }}>
-          <div>☎ <a href="tel:+33235211747">02 35 21 17 47</a></div>
-          <div>☎ <a href="tel:+33689121965">06 89 12 19 65</a></div>
-          <div>✉ <a href="mailto:boristesniere@yahoo.fr">boristesniere@yahoo.fr</a></div>
+          <div>☎ <Link href="tel:+33235211747">02 35 21 17 47</Link></div>
+          <div>☎ <Link href="tel:+33689121965">06 89 12 19 65</Link></div>
+          <div>✉ <Link href="mailto:boristesniere@yahoo.fr">boristesniere@yahoo.fr</Link></div>
         </div>
       </div>
 
       <div style={{ flex: 1 }}>
-        <div><a href="www.lairduthe.com">www.lairduthe.com</a></div>
-        <div><a href="https://www.facebook.com/LAirDuThe">https://www.facebook.com/LAirDuThe</a></div>
+        <div>
+          <Link
+            href="www.lairduthe.com"
+            style={{ textDecoration: 'underline' }}
+            target="_blank"
+            >
+            www.lairduthe.com
+          </Link>
+        </div>
+        <div>
+          <Link
+            href="https://www.facebook.com/LAirDuThe"
+            style={{ textDecoration: 'underline' }}
+            target="_blank"
+          >
+            https://www.facebook.com/LAirDuThe
+          </Link>
+        </div>
         <div>Du lundi au samedi de 10h30  à 20h sauf jours fériés</div>
       </div>
 

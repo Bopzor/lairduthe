@@ -5,7 +5,7 @@ import PageLayout from '../components/PageLayout';
 import Link from '../components/Link';
 
 const Home: React.FC<RouteComponentProps> = () => (
-  <PageLayout>
+  <PageLayout page="home">
 
     <article>
 
@@ -21,7 +21,7 @@ const Home: React.FC<RouteComponentProps> = () => (
           width: 350,
           height: 'auto',
           float: 'left',
-          margin: '0 25px 15px 0',
+          margin: '15px 25px 15px 0',
           boxShadow: '0 0 10px 4px #00000099',
           border: '1px solid #999',
         }}
