@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
       <div
         style={{
           width: '100%',
-          backgroundColor: '#FFFFFF99',
+          backgroundColor: '#00000099',
           display: 'flex',
           justifyContent: 'center',
         }}
