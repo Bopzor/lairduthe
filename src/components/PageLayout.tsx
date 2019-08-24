@@ -25,9 +25,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
     <div style={{ position: 'absolute', top: 0, width: '100%', height: '100%', overflow: 'auto' }}>
       <div style={{ width: '100%', maxWidth: 900, margin: 'auto', backgroundColor: '#FFFFFF99' }}>
         <Header page={page} />
-        <div style={{ padding: '0 15px' }}>
-          { children }
-        </div>
+        { children }
       </div>
       <Footer />
     </div>

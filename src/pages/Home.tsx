@@ -7,7 +7,7 @@ import Link from '../components/Link';
 const Home: React.FC<RouteComponentProps> = () => (
   <PageLayout page="home">
 
-    <article>
+    <article style={{ padding: '0 15px' }}>
 
       <header style={{ margin: '30px 0' }}>
         <h1>L'Air du thé</h1>

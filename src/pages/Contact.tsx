@@ -6,8 +6,8 @@ import Link from '../components/Link';
 
 const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' + [
   'bbox=0.10519623756408693%2C49.490514166900724%2C0.11231482028961183%2C49.49363277212335',
-  'amp;layer=mapnik',
-  'amp;marker=49.492073494348375%2C0.10875552892684937',
+  'layer=mapnik',
+  'marker=49.492073494348375%2C0.10875552892684937',
 ].join('&');
 
 const Contact: React.FC<RouteComponentProps> = () => (
@@ -15,9 +15,10 @@ const Contact: React.FC<RouteComponentProps> = () => (
 
     <div
       style={{
+        padding: '0 15px',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         margin: '40px 0',
         lineHeight: 1.6,
         fontSize: '1.3em',
@@ -39,6 +40,10 @@ const Contact: React.FC<RouteComponentProps> = () => (
 
       <div style={{ flex: 1 }}>
         <div>
+          <div>Du lundi au samedi (sauf jours fériés)</div>
+          <div>10h30 à 20h</div>
+        </div>
+        <div style={{ marginTop: 15 }}>
           <Link
             href="www.lairduthe.com"
             style={{ textDecoration: 'underline' }}
@@ -56,7 +61,6 @@ const Contact: React.FC<RouteComponentProps> = () => (
             https://www.facebook.com/LAirDuThe
           </Link>
         </div>
-        <div>Du lundi au samedi de 10h30  à 20h sauf jours fériés</div>
       </div>
 
     </div>
@@ -65,7 +69,7 @@ const Contact: React.FC<RouteComponentProps> = () => (
       height={480}
       scrolling="no"
       src={OPEN_STREET_MAP_URL}
-      style={{ width: '100%', border: '1px solid #CCC' }}
+      style={{ width: '100%', border: '0', marginBottom: -3 }}
       title="map"
     />
 
