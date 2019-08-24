@@ -1,6 +1,8 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
+import PageLayout from '../components/PageLayout';
+
 const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' + [
   'bbox=0.10519623756408693%2C49.490514166900724%2C0.11231482028961183%2C49.49363277212335',
   'amp;layer=mapnik',
@@ -8,7 +10,7 @@ const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' +
 ].join('&');
 
 const Contact: React.FC<RouteComponentProps> = () => (
-  <div>
+  <PageLayout>
 
     <div
       style={{
@@ -45,10 +47,11 @@ const Contact: React.FC<RouteComponentProps> = () => (
       height={480}
       scrolling="no"
       src={OPEN_STREET_MAP_URL}
-      style={{ width: '100%', border: '0' }}
+      style={{ width: '100%', border: '1px solid #CCC' }}
+      title="map"
     />
 
-  </div>
+  </PageLayout>
 );
 
 export default Contact;
