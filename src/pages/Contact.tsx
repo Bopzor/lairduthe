@@ -32,9 +32,24 @@ const Contact: React.FC<RouteComponentProps> = () => (
           <div>76600 Le Havre</div>
         </div>
         <div style={{ marginTop: 15 }}>
-          <div>☎ <Link href="tel:+33235211747">02 35 21 17 47</Link></div>
-          <div>☎ <Link href="tel:+33689121965">06 89 12 19 65</Link></div>
-          <div>✉ <Link href="mailto:boristesniere@yahoo.fr">boristesniere@yahoo.fr</Link></div>
+          <div>
+            ☎&nbsp;
+            <Link href="tel:+33235211747" style={{ textDecoration: 'none' }}>
+              02 35 21 17 47
+            </Link>
+          </div>
+          <div>
+            ☎&nbsp;
+            <Link href="tel:+33689121965" style={{ textDecoration: 'none' }}>
+              06 89 12 19 65
+            </Link>
+          </div>
+          <div>
+            ✉&nbsp;
+            <Link href="mailto:boristesniere@yahoo.fr" style={{ textDecoration: 'none' }}>
+              boristesniere@yahoo.fr
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -44,21 +59,13 @@ const Contact: React.FC<RouteComponentProps> = () => (
           <div>10h30 à 20h</div>
         </div>
         <div style={{ marginTop: 15 }}>
-          <Link
-            href="https://www.lairduthe.com"
-            style={{ textDecoration: 'underline' }}
-            target="_blank"
-            >
+          <Link href="https://www.lairduthe.com" target="_blank">
             www.lairduthe.com
           </Link>
         </div>
         <div>
-          <Link
-            href="https://www.facebook.com/LAirDuThe"
-            style={{ textDecoration: 'underline' }}
-            target="_blank"
-          >
-            https://www.facebook.com/LAirDuThe
+          <Link href="https://www.facebook.com/LAirDuThe" target="_blank">
+            www.facebook.com/LAirDuThe
           </Link>
         </div>
       </div>
