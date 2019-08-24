@@ -18,12 +18,13 @@ const Contact: React.FC<RouteComponentProps> = () => (
         flexDirection: 'row',
         alignItems: 'center',
         margin: '40px 0',
-        lineHeight: 1.8,
+        lineHeight: 1.6,
+        fontSize: '1.3em',
       }}
     >
 
       <div style={{ flex: 1 }}>
-        <div>
+        <div style={{ fontWeight: 'bold' }}>
           <div>L'Air du Thé</div>
           <div>20, rue Edouard Larue</div>
           <div>76600 Le Havre</div>
