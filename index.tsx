@@ -4,7 +4,6 @@ import path from 'path';
 import React from 'react';
 import ReactDomServer from 'react-dom/server';
 
-import Introduction from './src/pages/Introduction';
 import Home from './src/pages/Home';
 import Carte from './src/pages/Carte';
 import Contact from './src/pages/Contact';
@@ -15,8 +14,7 @@ const OUT_DIR = path.resolve(__dirname, 'dist');
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const pages = [
-  { Component: Introduction, filename: 'index.html' },
-  { Component: Home, filename: 'presentation.html' },
+  { Component: Home, filename: 'index.html' },
   { Component: Carte, filename: 'carte.html' },
   { Component: Contact, filename: 'contact.html' },
 ];

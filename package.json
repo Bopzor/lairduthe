@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "ts-node index.tsx",
+    "clean": "rimraf dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "rimraf": "^3.0.0",
     "ts-node": "^8.3.0"
   }
 }

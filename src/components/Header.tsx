@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
       }}
     >
       <Link
-        href="/presentation.html"
+        href="/"
         active={page === 'home'}
         style={{ textDecoration: 'none' }}
         >

@@ -45,7 +45,7 @@ const Contact: React.FC<RouteComponentProps> = () => (
         </div>
         <div style={{ marginTop: 15 }}>
           <Link
-            href="www.lairduthe.com"
+            href="https://www.lairduthe.com"
             style={{ textDecoration: 'underline' }}
             target="_blank"
             >
