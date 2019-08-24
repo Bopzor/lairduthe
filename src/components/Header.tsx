@@ -15,18 +15,28 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
         height: 270,
         margin: '30px 0',
         position: 'relative',
-        background: 'no-repeat center / 100% url(/assets/tea_box.jpg)',
+        backgroundImage: 'url(/assets/images/tea_box.jpg)',
+        backgroundSize: '100%',
         boxSizing: 'border-box',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
       }}
     >
-      <img
-        src="/assets/logo.png"
-        alt="logo"
-        width="90%"
-      />
+      <div
+        style={{
+          width: '100%',
+          backgroundColor: '#FFFFFF99',
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <img
+          src="/assets/images/logo.png"
+          alt="logo"
+          width="90%"
+        />
+      </div>
     </div>
 
     <nav

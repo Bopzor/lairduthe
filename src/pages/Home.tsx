@@ -15,7 +15,7 @@ const Home: React.FC<RouteComponentProps> = () => (
       </header>
 
       <img
-        src="/assets/store_window.jpg"
+        src="/assets/images/store_window.jpg"
         alt=""
         style={{
           width: 350,

@@ -51,7 +51,7 @@ p {
 }
 
 a {
-  color: initial;
+  color: inherit;
 }
 
 em {
