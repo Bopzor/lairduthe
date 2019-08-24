@@ -6,7 +6,6 @@ import PageLayout from '../components/PageLayout';
 const Home: React.FC<RouteComponentProps> = () => (
   <PageLayout>
     <div>Home</div>
-    <a href="/contact.html">Contact</a>
   </PageLayout>
 );
 
