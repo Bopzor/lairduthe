@@ -4,26 +4,26 @@
 }
 
 @font-face {
-  font-family: Monserrat;
-  src: url(/assets/fonts/Monserrat/Monserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(/assets/fonts/montserrat/Montserrat-Regular.ttf);
 }
 
 @font-face {
-  font-family: Monserrat;
-  src: url(/assets/fonts/Monserrat/Monserrat-Bold.ttf);
+  font-family: Montserrat;
+  src: url(/assets/fonts/montserrat/Montserrat-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: Monserrat;
-  src: url(/assets/fonts/Monserrat/Monserrat-RegularItalic.ttf);
+  font-family: Montserrat;
+  src: url(/assets/fonts/montserrat/Montserrat-RegularItalic.ttf);
   font-style: oblique;
 }
 
 html, body { height: 100% }
 
 body {
-  font-family: Monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 h1 {
