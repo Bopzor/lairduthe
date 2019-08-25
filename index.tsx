@@ -26,6 +26,7 @@ pages.forEach(({ Component, filename }) => {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/assets/images/favicon.png" />
         <link type="text/css" rel="stylesheet" href="/assets/css/reset.css" />
         <link type="text/css" rel="stylesheet" href="/assets/css/styles.css" />
         <title>L'air du thé - Salon de thé havrais</title>
@@ -49,8 +50,9 @@ const assets = [
   path.join('assets', 'images', 'tea_box.jpg'),
   path.join('assets', 'images', 'store_window.jpg'),
   path.join('assets', 'images', 'logo.png'),
+  path.join('assets', 'images', 'favicon.png'),
   path.join('assets', 'fonts', 'neuton', 'NeutonCursive-Regular.ttf'),
-  path.join('assets', 'fonts', 'montserrat', 'Montserrat-Bold.ttf'),
+  path.join('assets', 'fonts', 'montserrat', 'Montserrat-SemiBold.ttf'),
   path.join('assets', 'fonts', 'montserrat', 'Montserrat-Regular.ttf'),
   path.join('assets', 'fonts', 'montserrat', 'Montserrat-RegularItalic.ttf'),
 ];
