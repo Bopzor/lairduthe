@@ -14,14 +14,15 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
         width: '100%',
         height: 270,
         margin: '30px 0',
-        position: 'relative',
         backgroundImage: 'url(/assets/images/tea_box.jpg)',
         backgroundSize: '100%',
+        backgroundRepeat: 'no-repeat',
         boxSizing: 'border-box',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      className="headerBackground"
     >
       <div
         style={{
@@ -47,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
         borderBottom: '2px solid #999',
         display: 'flex',
         justifyContent: 'space-around',
-        fontSize: 30,
+        fontSize: '2em',
       }}
     >
       <Link

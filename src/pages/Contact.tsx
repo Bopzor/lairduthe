@@ -23,6 +23,7 @@ const Contact: React.FC<RouteComponentProps> = () => (
         lineHeight: 1.6,
         fontSize: '1.3em',
       }}
+      className="contactWrapper"
     >
 
       <div style={{ flex: 1 }}>

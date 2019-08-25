@@ -14,18 +14,21 @@ const Home: React.FC<RouteComponentProps> = () => (
         <h2 style={{ color: '#333' }}>Maison de thé Havraise - Restaurant</h2>
       </header>
 
-      <img
-        src="/assets/images/store_window.jpg"
-        alt=""
-        style={{
-          width: 350,
-          height: 'auto',
-          float: 'left',
-          margin: '15px 25px 15px 0',
-          boxShadow: '0 0 10px 4px #00000099',
-          border: '1px solid #999',
-        }}
-      />
+      <div className="homeImageWrapper">
+        <img
+          src="/assets/images/store_window.jpg"
+          alt=""
+          style={{
+            width: 350,
+            height: 'auto',
+            float: 'left',
+            margin: '15px 25px 15px 0',
+            boxShadow: '0 0 10px 4px #00000099',
+            border: '1px solid #999',
+          }}
+          className="homeImage"
+        />
+      </div>
       <p>
         Restaurant (service du déjeuner, de midi à quatorze heures) et maison de thé, nous vous accueillons depuis septembre 2009.
       </p>
