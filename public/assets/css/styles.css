@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: 'Neuton Bold';
+  src: url(/assets/fonts/neuton/Neuton-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
   font-family: Montserrat;
   src: url(/assets/fonts/montserrat/Montserrat-Regular.ttf);
 }
@@ -40,7 +46,7 @@ h2 {
 }
 
 nav {
-  font-family: Neuton;
+  font-family: Neuton, "Neuton Bold";
 }
 
 p {

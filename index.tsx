@@ -52,6 +52,7 @@ const assets = [
   path.join('assets', 'images', 'logo.png'),
   path.join('assets', 'images', 'favicon.png'),
   path.join('assets', 'fonts', 'neuton', 'NeutonCursive-Regular.ttf'),
+  path.join('assets', 'fonts', 'neuton', 'Neuton-Bold.ttf'),
   path.join('assets', 'fonts', 'montserrat', 'Montserrat-SemiBold.ttf'),
   path.join('assets', 'fonts', 'montserrat', 'Montserrat-Regular.ttf'),
   path.join('assets', 'fonts', 'montserrat', 'Montserrat-RegularItalic.ttf'),
