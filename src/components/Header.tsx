@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
     <nav
       style={{
         margin: '10px 0 30px 0',
-        paddingBottom: 10,
+        padding: '10px 0',
         borderTop: '2px solid #999',
         borderBottom: '2px solid #999',
         display: 'flex',

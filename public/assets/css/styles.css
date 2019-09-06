@@ -1,29 +1,17 @@
 @font-face {
-  font-family: Neuton;
-  src: url(/assets/fonts/neuton/NeutonCursive-Regular.ttf);
+  font-family: 'Bernardo Moda';
+  src: url(/assets/fonts/bernardo_moda/BernardoModa.ttf);
 }
 
 @font-face {
-  font-family: 'Neuton Bold';
-  src: url(/assets/fonts/neuton/Neuton-Bold.ttf);
+  font-family: 'Bernado Moda';
+  src: url(/assets/fonts/bernardo_moda/BernardoModa-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: Montserrat;
-  src: url(/assets/fonts/montserrat/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(/assets/fonts/montserrat/Montserrat-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(/assets/fonts/montserrat/Montserrat-RegularItalic.ttf);
-  font-style: oblique;
+  font-family: 'Jose Fernandez';
+  src: url(/assets/fonts/jose_fernandez/JoseFernandez.ttf);
 }
 
 html, body {
@@ -31,28 +19,29 @@ html, body {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Bernardo Moda', sans-serif;
+  color: #000;
 }
 
 h1 {
   line-height: 1;
-  font-family: Neuton;
+  font-family: 'Jose Fernandez';
   font-size: 3em;
   text-align: center;
 }
 
 h2 {
-  font-family: Neuton;
+  font-family: 'Jose Fernandez';
   text-align: center;
   font-size: 1.8em;
 }
 
 nav {
-  font-family: Neuton, "Neuton Bold";
+  font-family: 'Jose Fernandez';
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin-bottom: 10px;
   line-height: 1.4;
   text-align: justify;
@@ -62,12 +51,9 @@ a {
   color: inherit;
 }
 
-em {
-  font-style: oblique;
-}
-
 strong {
-  font-weight: 600;
+  font-family: 'Bernardo Moda';
+  font-weight: bold;
   color: #333;
 }
 

@@ -8,14 +8,20 @@ type PageLayoutProps = {
   children: React.ReactNode;
 };
 
+const images: { [key: string]: string } = {
+  home: 'url(/assets/images/tea_cup.jpg)',
+  carte: 'url(/assets/images/tea_leaf2.jpg)',
+  contact: 'url(/assets/images/flower.jpg)',
+};
+
 const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
   <div style={{ height: '100%', position: 'relative' }}>
 
     <div
       style={{
         height: '100%',
-        backgroundImage: 'url(/assets/images/tea_leaf.jpg)',
-        opacity: 0.70,
+        backgroundImage: images[page],
+        opacity: 0.80,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -23,7 +29,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
     />
 
     <div style={{ position: 'absolute', top: 0, width: '100%', height: '100%', overflow: 'auto' }}>
-      <div style={{ width: '100%', maxWidth: 900, margin: 'auto', backgroundColor: 'rgba(255, 255, 255, 0.6)' }}  className="pageLayoutContentWrapper">
+      <div style={{ width: '100%', maxWidth: 900, margin: 'auto', backgroundColor: 'rgba(255, 255, 255, 0.4)' }}  className="pageLayoutContentWrapper">
         <Header page={page} />
         { children }
       </div>

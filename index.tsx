@@ -46,7 +46,9 @@ const assets = [
   'robots.txt',
   path.join('assets', 'css', 'reset.css'),
   path.join('assets', 'css', 'styles.css'),
-  path.join('assets', 'images', 'tea_leaf.jpg'),
+  path.join('assets', 'images', 'tea_leaf2.jpg'),
+  path.join('assets', 'images', 'flower.jpg'),
+  path.join('assets', 'images', 'tea_cup.jpg'),
   path.join('assets', 'images', 'tea_box.jpg'),
   path.join('assets', 'images', 'store_window.jpg'),
   path.join('assets', 'images', 'logo.png'),
@@ -62,10 +64,9 @@ const assets = [
   path.join('assets', 'images', 'carte', 'carte_2019_p08.png'),
   path.join('assets', 'images', 'carte', 'carte_2019_p09.png'),
   path.join('assets', 'images', 'carte', 'carte_2019_p10.png'),
-  path.join('assets', 'fonts', 'neuton', 'NeutonCursive-Regular.ttf'),
-  path.join('assets', 'fonts', 'neuton', 'Neuton-Bold.ttf'),
-  path.join('assets', 'fonts', 'montserrat', 'Montserrat-SemiBold.ttf'),
-  path.join('assets', 'fonts', 'montserrat', 'Montserrat-Regular.ttf'),
+  path.join('assets', 'fonts', 'bernardo_moda', 'BernardoModa.ttf'),
+  path.join('assets', 'fonts', 'bernardo_moda', 'BernardoModa-Bold.ttf'),
+  path.join('assets', 'fonts', 'jose_fernandez', 'JoseFernandez.ttf'),
 ];
 
 assets.forEach(asset => {
