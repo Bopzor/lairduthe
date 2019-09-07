@@ -21,7 +21,7 @@ const Presentation: React.FC<RouteComponentProps> = () => (
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        margin: '0 20px',
+        margin: '100px 20px 0 20px',
       }}
     >
       <img
