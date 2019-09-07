@@ -5,6 +5,7 @@ import React from 'react';
 import ReactDomServer from 'react-dom/server';
 
 import Home from './src/pages/Home';
+import Presentation from './src/pages/Presentation';
 import Carte from './src/pages/Carte';
 import Contact from './src/pages/Contact';
 
@@ -15,6 +16,7 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const pages = [
   { Component: Home, filename: 'index.html' },
+  { Component: Presentation, filename: 'presentation.html' },
   { Component: Carte, filename: 'carte.html' },
   { Component: Contact, filename: 'contact.html' },
 ];
@@ -50,7 +52,7 @@ const assets = [
   path.join('assets', 'images', 'flower.jpg'),
   path.join('assets', 'images', 'tea_cup.jpg'),
   path.join('assets', 'images', 'tea_box.jpg'),
-  path.join('assets', 'images', 'store_window.jpg'),
+  path.join('assets', 'images', 'store.jpg'),
   path.join('assets', 'images', 'logo.png'),
   path.join('assets', 'images', 'favicon.png'),
   path.join('assets', 'images', 'carte', 'carte_2019.pdf'),

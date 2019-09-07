@@ -1,38 +1,77 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
-import PageLayout from '../components/PageLayout';
-import Link from '../components/Link';
+const Presentation: React.FC<RouteComponentProps> = () => (
+  <div
+    style={{
+      height: '100%',
+      backgroundImage: 'url(/assets/images/store.jpg)',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+    }}
+  >
+    <div
+      style={{
+        width: '100%',
+        height: '320px',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      className="homeBackgroundHeader"
+    >
 
-const Home: React.FC<RouteComponentProps> = () => (
-  <PageLayout page="home">
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          margin: '0 20px',
+        }}
+      >
+        <img
+          src="/assets/images/logo.png"
+          alt="logo"
+          width="100%"
+          height="auto"
+        />
+        <h1 style={{ color: '#ddd', fontSize: '2.5em' }}>Maison de thé Havraise - Restaurant</h1>
+      </div>
 
-    <article style={{ padding: '0 15px' }}>
+    </div>
 
-      <header style={{ margin: '30px 0' }}>
-        <h1>L'Air du Thé</h1>
-        <h2 style={{ color: '#333' }}>Maison de thé Havraise - Restaurant</h2>
-      </header>
-
-      <p>
-        Restaurant (service du déjeuner, de midi à quatorze heures) et maison de thé, nous vous accueillons depuis septembre 2009.
-      </p>
-      <p>
-        En cuisine, <strong>tout est maison</strong>. Nous nous fournissons en poissons au marché du petit port et grâce à l'AMAP Le Panier Cauchois en viandes bio et locales, mais aussi en oeufs, pain, produits laitiers, fruits, légumes (complément maraîcher au potager de la Brière à Octeville). Depuis nos débuts <strong>nous accordons une grande importance à la qualité et à l'origine de nos produits</strong>.
-      </p>
-      <p>
-        Vous pouvez déguster nos thés et autres spécialités sur place avec une pâtisserie maison, mais aussi acheter au poids pour votre consommation domestique, les thés et tisanes de la <Link href="/carte.html">carte</Link>. <strong>Nous nous efforçons de vous proposer une sélection de la meilleure qualité et d'une grande diversité, reflet d'un amour de ce produit hautement culturel. Notre carte compte aujourd'hui 113 références, dont un nombre croissant issues de l'agriculture biologique (67 actuellement)</strong>.
-      </p>
-      <p>
-        En outre nous organisons des expositions mensuelles et mettons à votre dispositions des livres et un juke box en libre service gratuit !
-      </p>
-      <p>
-        A bientôt !
-      </p>
-
-    </article>
-
-  </PageLayout>
+    <div
+      style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        boxSizing: 'border-box',
+        marginTop: '10%',
+        padding: '10px 20px',
+        borderRadius: 10,
+        textAlign: 'center',
+      }}
+      className="homeLinkWrapper"
+    >
+      <a
+        href="/presentation.html"
+        style={{
+          fontSize: '5em',
+          fontFamily: 'Jose Fernandez',
+          textDecoration: 'none',
+          color: '#ddd',
+        }}
+        className="honeLink"
+        >
+          Entrée
+        </a>
+    </div>
+  </div>
 );
 
-export default Home;
+export default Presentation;

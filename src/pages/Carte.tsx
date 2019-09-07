@@ -11,11 +11,11 @@ const Carte: React.FC<RouteComponentProps> = () => (
         data="/assets/images/carte/carte_2019.pdf"
         type="application/pdf"
         width="90%"
-        height="1150px"
+        height="1200px"
       >
         <div
           style={{
-            height: '1150px',
+            height: '1200px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',

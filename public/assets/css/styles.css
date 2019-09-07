@@ -41,7 +41,7 @@ nav {
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin-bottom: 10px;
   line-height: 1.4;
   text-align: justify;
@@ -70,11 +70,19 @@ strong {
 
 @media (max-width: 700px) {
   nav {
-    font-size: 1.5em !important;
+    font-size: 1.1em !important;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+
+  h1 {
+    font-size: 1.8em !important;
+  }
+
+  h2 {
+    font-size: 1.1em;
   }
 
   .pageLayoutContentWrapper {
@@ -82,22 +90,24 @@ strong {
   }
 
   .headerBackground {
+    height: 150px !important;
+  }
+
+  .homeBackgroundHeader {
     height: 200px !important;
   }
 
-  .homeImageWrapper {
-    display: flex;
-    justify-content: center;
+  .homeLinkWrapper {
+    margin-top: 25% !important;
   }
 
-  .homeImage {
-    width: 300px !important;
-    margin: 15px !important;
+  .honeLink {
+    font-size: 4em !important;
   }
 
   .contactWrapper {
     flex-direction: column !important;
-    font-size: 1em !important;
+    font-size: 1.3em !important;
     justify-content: space-between;
   }
 

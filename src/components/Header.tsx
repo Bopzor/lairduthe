@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
       style={{
         width: '100%',
         height: 270,
-        margin: '30px 0',
+        marginBottom: '30px',
         backgroundImage: 'url(/assets/images/tea_box.jpg)',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
@@ -44,16 +44,16 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
       style={{
         margin: '10px 0 30px 0',
         padding: '10px 0',
-        borderTop: '2px solid #999',
-        borderBottom: '2px solid #999',
+        borderTop: '2px solid #777',
+        borderBottom: '2px solid #777',
         display: 'flex',
         justifyContent: 'space-around',
         fontSize: '2em',
       }}
     >
       <Link
-        href="/"
-        active={page === 'home'}
+        href="/presentation.html"
+        active={page === 'presentation'}
         style={{ textDecoration: 'none' }}
         >
         Présentation

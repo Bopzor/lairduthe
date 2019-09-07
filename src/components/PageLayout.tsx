@@ -9,7 +9,7 @@ type PageLayoutProps = {
 };
 
 const images: { [key: string]: string } = {
-  home: 'url(/assets/images/tea_cup.jpg)',
+  presentation: 'url(/assets/images/tea_cup.jpg)',
   carte: 'url(/assets/images/tea_leaf2.jpg)',
   contact: 'url(/assets/images/flower.jpg)',
 };
@@ -21,7 +21,6 @@ const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
       style={{
         height: '100%',
         backgroundImage: images[page],
-        opacity: 0.80,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
