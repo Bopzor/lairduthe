@@ -66,8 +66,6 @@ const assets = [
   path.join('assets', 'images', 'carte', 'carte_2019_p08.png'),
   path.join('assets', 'images', 'carte', 'carte_2019_p09.png'),
   path.join('assets', 'images', 'carte', 'carte_2019_p10.png'),
-  path.join('assets', 'fonts', 'bernardo_moda', 'BernardoModa.ttf'),
-  path.join('assets', 'fonts', 'bernardo_moda', 'BernardoModa-Bold.ttf'),
   path.join('assets', 'fonts', 'jose_fernandez', 'JoseFernandez.ttf'),
 ];
 

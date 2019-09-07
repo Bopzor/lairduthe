@@ -15,41 +15,34 @@ const Presentation: React.FC<RouteComponentProps> = () => (
       alignItems: 'center',
     }}
   >
+
     <div
       style={{
-        width: '100%',
-        height: '320px',
-        backgroundColor: 'rgba(0, 0, 0, 0.4)',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center',
+        margin: '0 20px',
       }}
-      className="homeBackgroundHeader"
     >
-
-      <div
+      <img
+        src="/assets/images/logo.png"
+        alt="logo"
+        width="100%"
+        height="auto"
+      />
+      <h1
         style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          margin: '0 20px',
-        }}
-      >
-        <img
-          src="/assets/images/logo.png"
-          alt="logo"
-          width="100%"
-          height="auto"
-        />
-        <h1 style={{ color: '#ddd', fontSize: '2.5em' }}>Maison de thé Havraise - Restaurant</h1>
-      </div>
-
+          color: '#000',
+          fontSize: '2.5em',
+          textShadow: '2px 1px 4px #fff'
+          }}
+        >
+          Maison de thé Havraise - Restaurant
+        </h1>
     </div>
 
     <div
       style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
         boxSizing: 'border-box',
         marginTop: '10%',
         padding: '10px 20px',
@@ -64,7 +57,8 @@ const Presentation: React.FC<RouteComponentProps> = () => (
           fontSize: '5em',
           fontFamily: 'Jose Fernandez',
           textDecoration: 'none',
-          color: '#ddd',
+          textShadow: '6px 1px 10px #fff',
+          color: '#000',
         }}
         className="honeLink"
         >

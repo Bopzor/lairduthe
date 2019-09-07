@@ -11,7 +11,7 @@ const Presentation: React.FC<RouteComponentProps> = () => (
 
       <header style={{ margin: '30px 0' }}>
         <h1>L'Air du Thé</h1>
-        <h2 style={{ color: '#444' }}>Maison de thé Havraise - Restaurant</h2>
+        <h2>Maison de thé Havraise - Restaurant</h2>
       </header>
 
       <p>

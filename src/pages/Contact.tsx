@@ -21,7 +21,7 @@ const Contact: React.FC<RouteComponentProps> = () => (
         alignItems: 'flex-start',
         margin: '40px 0',
         lineHeight: 1.6,
-        fontSize: '1.8em',
+        fontSize: '1.3em',
       }}
       className="contactWrapper"
     >

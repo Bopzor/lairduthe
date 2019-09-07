@@ -1,15 +1,4 @@
 @font-face {
-  font-family: 'Bernardo Moda';
-  src: url(/assets/fonts/bernardo_moda/BernardoModa.ttf);
-}
-
-@font-face {
-  font-family: 'Bernado Moda';
-  src: url(/assets/fonts/bernardo_moda/BernardoModa-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
   font-family: 'Jose Fernandez';
   src: url(/assets/fonts/jose_fernandez/JoseFernandez.ttf);
 }
@@ -19,29 +8,23 @@ html, body {
 }
 
 body {
-  font-family: 'Bernardo Moda', sans-serif;
+  font-family: 'Jose Fernandez', sans-serif;
   color: #000;
 }
 
 h1 {
   line-height: 1;
-  font-family: 'Jose Fernandez';
   font-size: 3em;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Jose Fernandez';
   text-align: center;
   font-size: 1.8em;
 }
 
-nav {
-  font-family: 'Jose Fernandez';
-}
-
 p {
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin-bottom: 10px;
   line-height: 1.4;
   text-align: justify;
@@ -52,9 +35,7 @@ a {
 }
 
 strong {
-  font-family: 'Bernardo Moda';
   font-weight: bold;
-  color: #333;
 }
 
 .headerBackground {
@@ -74,7 +55,7 @@ strong {
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   h1 {
@@ -107,7 +88,7 @@ strong {
 
   .contactWrapper {
     flex-direction: column !important;
-    font-size: 1.3em !important;
+    font-size: 1em !important;
     justify-content: space-between;
   }
 
