@@ -27,6 +27,11 @@ pages.forEach(({ Component, filename }) => {
 
       <head>
         <meta charSet="utf-8" />
+        <meta name="description" content="Site web L'Air du Thé Le Havre" />
+        <meta
+          name="keywords"
+          content="thé, tea, thé blanc, le havre, thé noir, thé vert, thé bio, salon de thé, restaurant"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/images/favicon.png" />
         <link type="text/css" rel="stylesheet" href="/assets/css/reset.css" />

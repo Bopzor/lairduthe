@@ -60,12 +60,12 @@ const Contact: React.FC<RouteComponentProps> = () => (
           <div>10h30 à 20h</div>
         </div>
         <div style={{ marginTop: 15 }}>
-          <Link href="https://www.lairduthe.com" target="_blank">
+          <Link href="https://www.lairduthe.com" rel="noreferrer" target="_blank">
             www.lairduthe.com
           </Link>
         </div>
         <div>
-          <Link href="https://www.facebook.com/LAirDuThe" target="_blank">
+          <Link href="https://www.facebook.com/LAirDuThe" rel="noreferrer" target="_blank">
             www.facebook.com/LAirDuThe
           </Link>
         </div>
