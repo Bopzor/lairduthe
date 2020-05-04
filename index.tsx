@@ -41,6 +41,9 @@ pages.forEach(({ Component, filename }) => {
 
       <body>
         <Component />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164069386-1" />
+        <script type="text/javascript" src="/assets/js/gtag.js" />
       </body>
 
     </html>
@@ -72,6 +75,7 @@ const assets = [
   path.join('assets', 'images', 'carte', 'carte_2019_p09.png'),
   path.join('assets', 'images', 'carte', 'carte_2019_p10.png'),
   path.join('assets', 'fonts', 'jose_fernandez', 'JoseFernandez.ttf'),
+  path.join('assets', 'js', 'gtag.js'),
 ];
 
 assets.forEach(asset => {
