@@ -43,40 +43,6 @@ strong {
   height: 270px;
 }
 
-.navDropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.navDropdownLink {
-  display: block;
-  font-size: 1.5rem;
-  color: initial
-}
-
-.navDropdownContent {
-  display: none;
-  position: absolute;
-  top: -1rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: 1;
-  padding: 8px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.navDropdown:hover {
-  color: transparent
-}
-
-.navDropdown:hover .navDropdownContent {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 @media (max-width: 900px) {
   .pageLayoutContentWrapper {
     max-width: 700px !important;
@@ -87,6 +53,7 @@ strong {
 @media (max-width: 700px) {
   nav {
     font-size: 1.1em !important;
+    margin-bottom: 20px !important;
   }
 
   p {
@@ -107,6 +74,7 @@ strong {
 
   .headerBackground {
     height: 150px !important;
+    margin-bottom: 20px !important;
   }
 
   .homeBackgroundHeader {
@@ -121,10 +89,6 @@ strong {
     font-size: 4em !important;
   }
 
-  .navDropdownLink {
-    font-size: 0.875rem;
-  }
-
   .contactWrapper {
     flex-direction: column !important;
     font-size: 1em !important;
@@ -133,5 +97,15 @@ strong {
 
   .contactWrapper>div:first-child {
     margin-bottom: 10px;
+  }
+
+  .carte-nav {
+    margin-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .carte-nav-link {
+    font-size: 1rem !important;
   }
 }

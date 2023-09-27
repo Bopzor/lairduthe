@@ -53,7 +53,11 @@ const Header = ({ page }: HeaderProps) => (
       >
         Présentation
       </Link>
-      <Link href="/carte.html" active={page === 'carte'} style={{ textDecoration: 'none' }}>
+      <Link
+        href="/carte-au-poids.html"
+        active={page.includes('carte')}
+        style={{ textDecoration: 'none' }}
+      >
         Carte des thés
       </Link>
       <Link href="/contact.html" active={page === 'contact'} style={{ textDecoration: 'none' }}>
