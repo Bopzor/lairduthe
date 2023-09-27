@@ -4,7 +4,7 @@ type LinkProps = React.HTMLProps<HTMLAnchorElement> & {
   active?: boolean;
 };
 
-const Link: React.FC<LinkProps> = ({ active, style, children, ...props }) => (
+const Link = ({ active, style, children, ...props }: LinkProps) => (
   <a
     style={{
       fontWeight: active ? 'bold' : 'initial',
@@ -12,7 +12,7 @@ const Link: React.FC<LinkProps> = ({ active, style, children, ...props }) => (
     }}
     {...props}
   >
-    { children }
+    {children}
   </a>
 );
 

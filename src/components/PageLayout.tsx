@@ -14,9 +14,8 @@ const images: { [key: string]: string } = {
   contact: 'url(/assets/images/flower.jpg)',
 };
 
-const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
+const PageLayout = ({ page, children }: PageLayoutProps) => (
   <div style={{ height: '100%', position: 'relative' }}>
-
     <div
       style={{
         height: '100%',
@@ -28,13 +27,20 @@ const PageLayout: React.FC<PageLayoutProps> = ({ page, children }) => (
     />
 
     <div style={{ position: 'absolute', top: 0, width: '100%', height: '100%', overflow: 'auto' }}>
-      <div style={{ width: '100%', maxWidth: 900, margin: 'auto', backgroundColor: 'rgba(255, 255, 255, 0.4)' }}  className="pageLayoutContentWrapper">
+      <div
+        style={{
+          width: '100%',
+          maxWidth: 900,
+          margin: 'auto',
+          backgroundColor: 'rgba(255, 255, 255, 0.4)',
+        }}
+        className="pageLayoutContentWrapper"
+      >
         <Header page={page} />
-        { children }
+        {children}
       </div>
       <Footer />
     </div>
-
   </div>
 );
 

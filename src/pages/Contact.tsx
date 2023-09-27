@@ -4,15 +4,16 @@ import { RouteComponentProps } from '@reach/router';
 import PageLayout from '../components/PageLayout';
 import Link from '../components/Link';
 
-const OPEN_STREET_MAP_URL = 'https://www.openstreetmap.org/export/embed.html?' + [
-  'bbox=0.10519623756408693%2C49.490514166900724%2C0.11231482028961183%2C49.49363277212335',
-  'layer=mapnik',
-  'marker=49.492073494348375%2C0.10875552892684937',
-].join('&');
+const OPEN_STREET_MAP_URL =
+  'https://www.openstreetmap.org/export/embed.html?' +
+  [
+    'bbox=0.10519623756408693%2C49.490514166900724%2C0.11231482028961183%2C49.49363277212335',
+    'layer=mapnik',
+    'marker=49.492073494348375%2C0.10875552892684937',
+  ].join('&');
 
-const Contact: React.FC<RouteComponentProps> = () => (
+const Contact = (_: RouteComponentProps) => (
   <PageLayout page="contact">
-
     <div
       style={{
         padding: '0 15px',
@@ -25,7 +26,6 @@ const Contact: React.FC<RouteComponentProps> = () => (
       }}
       className="contactWrapper"
     >
-
       <div style={{ flex: 1 }}>
         <div style={{ fontWeight: 'bold' }}>
           <div>L'Air du Thé</div>
@@ -70,7 +70,6 @@ const Contact: React.FC<RouteComponentProps> = () => (
           </Link>
         </div>
       </div>
-
     </div>
 
     <iframe
@@ -80,7 +79,6 @@ const Contact: React.FC<RouteComponentProps> = () => (
       style={{ width: '100%', border: '0', marginBottom: -3 }}
       title="map"
     />
-
   </PageLayout>
 );
 

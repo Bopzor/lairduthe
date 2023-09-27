@@ -4,12 +4,9 @@ import { RouteComponentProps } from '@reach/router';
 import PageLayout from '../components/PageLayout';
 
 // TODO: change the public url
-const Carte: React.FC<RouteComponentProps> = () => (
+const Carte = (_: RouteComponentProps) => (
   <PageLayout page="carte">
-    <a
-      href="/assets/images/carte/carte.pdf"
-      target="_blank"
-    >
+    <a href="/assets/images/carte/carte.pdf" target="_blank">
       <img
         src="/assets/images/carte/carte_p01.png"
         alt="carte-page-1"
@@ -64,11 +61,7 @@ const Carte: React.FC<RouteComponentProps> = () => (
         width="100%"
         style={{ marginBottom: 2 }}
       />
-      <img
-        src="/assets/images/carte/carte_p10.png"
-        alt="carte-page-10"
-        width="100%"
-      />
+      <img src="/assets/images/carte/carte_p10.png" alt="carte-page-10" width="100%" />
     </a>
   </PageLayout>
 );
