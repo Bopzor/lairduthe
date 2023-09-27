@@ -6,9 +6,8 @@ type HeaderProps = {
   page: string;
 };
 
-const Header: React.FC<HeaderProps> = ({ page }) => (
+const Header = ({ page }: HeaderProps) => (
   <header>
-
     <div
       style={{
         width: '100%',
@@ -32,11 +31,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
           justifyContent: 'center',
         }}
       >
-        <img
-          src="/assets/images/logo.png"
-          alt="logo"
-          width="90%"
-        />
+        <img src="/assets/images/logo.png" alt="logo" width="90%" />
       </div>
     </div>
 
@@ -55,25 +50,16 @@ const Header: React.FC<HeaderProps> = ({ page }) => (
         href="/presentation.html"
         active={page === 'presentation'}
         style={{ textDecoration: 'none' }}
-        >
+      >
         Présentation
       </Link>
-      <Link
-        href="/carte.html"
-        active={page === 'carte'}
-        style={{ textDecoration: 'none' }}
-        >
+      <Link href="/carte.html" active={page === 'carte'} style={{ textDecoration: 'none' }}>
         Carte des thés
       </Link>
-      <Link
-        href="/contact.html"
-        active={page === 'contact'}
-        style={{ textDecoration: 'none' }}
-      >
+      <Link href="/contact.html" active={page === 'contact'} style={{ textDecoration: 'none' }}>
         Contact
       </Link>
     </nav>
-
   </header>
 );
 

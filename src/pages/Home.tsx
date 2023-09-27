@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
-const Presentation: React.FC<RouteComponentProps> = () => (
+const Presentation = (_: RouteComponentProps) => (
   <div
     style={{
       height: '100%',
@@ -15,7 +15,6 @@ const Presentation: React.FC<RouteComponentProps> = () => (
       alignItems: 'center',
     }}
   >
-
     <div
       style={{
         display: 'flex',
@@ -24,21 +23,16 @@ const Presentation: React.FC<RouteComponentProps> = () => (
         margin: '100px 20px 0 20px',
       }}
     >
-      <img
-        src="/assets/images/logo.png"
-        alt="logo"
-        width="100%"
-        height="auto"
-      />
+      <img src="/assets/images/logo.png" alt="logo" width="100%" height="auto" />
       <h1
         style={{
           color: '#000',
           fontSize: '2.5em',
-          textShadow: '2px 1px 4px #fff'
-          }}
-        >
-          Maison de thé Havraise - Restaurant
-        </h1>
+          textShadow: '2px 1px 4px #fff',
+        }}
+      >
+        Maison de thé Havraise - Restaurant
+      </h1>
     </div>
 
     <div
@@ -61,9 +55,9 @@ const Presentation: React.FC<RouteComponentProps> = () => (
           color: '#000',
         }}
         className="honeLink"
-        >
-          Entrée
-        </a>
+      >
+        Entrée
+      </a>
     </div>
   </div>
 );
