@@ -6,7 +6,8 @@ import ReactDomServer from 'react-dom/server';
 
 import Home from './src/pages/Home';
 import Presentation from './src/pages/Presentation';
-import Carte from './src/pages/Carte';
+import CarteTakeAway from './src/pages/CarteTakeAway';
+import CarteRestaurant from './src/pages/CarteRestaurant';
 import Contact from './src/pages/Contact';
 
 const PUBLIC_DIR = path.resolve(__dirname, 'public');
@@ -17,14 +18,14 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 const pages = [
   { Component: Home, filename: 'index.html' },
   { Component: Presentation, filename: 'presentation.html' },
-  { Component: Carte, filename: 'carte.html' },
+  { Component: CarteTakeAway, filename: 'carte-au-poids.html' },
+  { Component: CarteRestaurant, filename: 'carte-sur-place.html' },
   { Component: Contact, filename: 'contact.html' },
 ];
 
 pages.forEach(({ Component, filename }) => {
-  const markup = ReactDomServer.renderToStaticMarkup((
+  const markup = ReactDomServer.renderToStaticMarkup(
     <html lang="fr">
-
       <head>
         <meta charSet="utf-8" />
         <meta name="description" content="Site web L'Air du Thé Le Havre" />
@@ -45,9 +46,8 @@ pages.forEach(({ Component, filename }) => {
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164069386-1" />
         <script type="text/javascript" src="/assets/js/gtag.js" />
       </body>
-
     </html>
-  ));
+  );
 
   fs.writeFileSync(path.join(OUT_DIR, filename), '<!DOCTYPE html>' + markup);
 });
@@ -63,22 +63,25 @@ const assets = [
   path.join('assets', 'images', 'store.jpg'),
   path.join('assets', 'images', 'logo.png'),
   path.join('assets', 'images', 'favicon.png'),
-  path.join('assets', 'images', 'carte', 'carte.pdf'),
-  path.join('assets', 'images', 'carte', 'carte_p01.png'),
-  path.join('assets', 'images', 'carte', 'carte_p02.png'),
-  path.join('assets', 'images', 'carte', 'carte_p03.png'),
-  path.join('assets', 'images', 'carte', 'carte_p04.png'),
-  path.join('assets', 'images', 'carte', 'carte_p05.png'),
-  path.join('assets', 'images', 'carte', 'carte_p06.png'),
-  path.join('assets', 'images', 'carte', 'carte_p07.png'),
-  path.join('assets', 'images', 'carte', 'carte_p08.png'),
-  path.join('assets', 'images', 'carte', 'carte_p09.png'),
-  path.join('assets', 'images', 'carte', 'carte_p10.png'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place.pdf'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p01.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p02.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p03.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p04.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p05.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-sur-place_p06.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids.pdf'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p01.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p02.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p03.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p04.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p05.jpg'),
+  path.join('assets', 'images', 'carte', 'carte-au-poids_p06.jpg'),
   path.join('assets', 'fonts', 'jose_fernandez', 'JoseFernandez.ttf'),
   path.join('assets', 'js', 'gtag.js'),
 ];
 
-assets.forEach(asset => {
+assets.forEach((asset) => {
   fs.mkdirSync(path.join(OUT_DIR, path.dirname(asset)), { recursive: true });
   fs.copyFileSync(path.join(PUBLIC_DIR, asset), path.join(OUT_DIR, asset));
 });
