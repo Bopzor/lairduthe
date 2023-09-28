@@ -34,8 +34,6 @@ const PageLayout = ({ page, children }: PageLayoutProps) => (
         width: '100%',
         height: '100%',
         overflow: 'auto',
-        display: 'flex',
-        flexDirection: 'column',
       }}
     >
       <div
@@ -44,9 +42,6 @@ const PageLayout = ({ page, children }: PageLayoutProps) => (
           maxWidth: 900,
           margin: 'auto',
           backgroundColor: `rgba(255, 255, 255, ${page.includes('carte') ? '0.6' : '0.4'})`,
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
         }}
         className="pageLayoutContentWrapper"
       >
