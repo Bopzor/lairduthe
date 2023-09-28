@@ -16,10 +16,6 @@ const Carte = ({ pdf, images, page }: CarteProps) => (
       style={{
         fontSize: '1.875rem',
         marginBottom: 16,
-        paddingLeft: 24,
-        paddingBottom: 10,
-        display: 'flex',
-        gap: 24,
       }}
     >
       <Link
@@ -28,8 +24,8 @@ const Carte = ({ pdf, images, page }: CarteProps) => (
         className="carte-nav-link"
         style={{
           textDecoration: 'none',
-          boxShadow: page === 'carte-au-poids' ? 'inset 0 -4px 0px rgba(0, 0, 0, 0.4)' : 'none',
-          paddingBottom: 10,
+          backgroundColor: page === 'carte-au-poids' ? 'rgba(255, 255, 255, 0.6)' : 'none',
+          padding: 16,
           fontSize: '1.5rem',
         }}
       >
@@ -41,8 +37,8 @@ const Carte = ({ pdf, images, page }: CarteProps) => (
         className="carte-nav-link"
         style={{
           textDecoration: 'none',
-          boxShadow: page === 'carte-sur-place' ? 'inset 0 -4px 0px rgba(0, 0, 0, 0.4)' : 'none',
-          paddingBottom: 10,
+          backgroundColor: page === 'carte-sur-place' ? 'rgba(255, 255, 255, 0.6)' : 'none',
+          padding: 16,
           fontSize: '1.5rem',
         }}
       >
@@ -50,7 +46,7 @@ const Carte = ({ pdf, images, page }: CarteProps) => (
       </Link>
     </nav>
 
-    <object data={`${pdf}#toolbar=1`} style={{ width: '100%', flex: 1 }}>
+    <object data={`${pdf}#toolbar=1`} style={{ width: '100%', minHeight: '1100px' }}>
       <a href={pdf} rel="noreferrer" target="_blank">
         {images.map((image, index) => (
           <img
