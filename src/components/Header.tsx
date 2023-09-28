@@ -58,7 +58,7 @@ const Header = ({ page }: HeaderProps) => (
         active={page.includes('carte')}
         style={{ textDecoration: 'none' }}
       >
-        Carte des thés
+        Cartes
       </Link>
       <Link href="/contact.html" active={page === 'contact'} style={{ textDecoration: 'none' }}>
         Contact

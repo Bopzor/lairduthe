@@ -29,9 +29,9 @@ const Presentation = (_: RouteComponentProps) => (
       <p>
         Vous pouvez déguster nos thés et autres spécialités sur place avec une pâtisserie maison,
         mais aussi acheter au poids pour votre consommation domestique, les thés et tisanes de la{' '}
-        <Link href="/carte.html">carte</Link>. Nous nous efforçons de vous proposer une sélection de
-        la meilleure qualité et d'une grande diversité, reflet d'un amour de ce produit hautement
-        culturel.{' '}
+        <Link href="/carte-au-poids.html">carte</Link>. Nous nous efforçons de vous proposer une
+        sélection de la meilleure qualité et d'une grande diversité, reflet d'un amour de ce produit
+        hautement culturel.{' '}
         <strong>
           Notre carte compte aujourd'hui 113 références, dont un nombre croissant issues de
           l'agriculture biologique (67 actuellement)
