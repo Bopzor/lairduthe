@@ -16,7 +16,7 @@ export default function Footer() {
       >
         Bopzor & Nils
       </Link>{" "}
-      - 2025
+      - 2026
     </div>
   );
 }

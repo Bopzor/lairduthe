@@ -12,7 +12,6 @@ export default function CarteRestaurant() {
         "/assets/images/carte/carte-sur-place_p04.jpg",
         "/assets/images/carte/carte-sur-place_p05.jpg",
         "/assets/images/carte/carte-sur-place_p06.jpg",
-        "/assets/images/carte/carte-sur-place_p07.jpg",
       ]}
     />
   );

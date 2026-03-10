@@ -11,6 +11,7 @@ export default function CarteTakeAway() {
         "/assets/images/carte/carte-au-poids_p03.jpg",
         "/assets/images/carte/carte-au-poids_p04.jpg",
         "/assets/images/carte/carte-au-poids_p05.jpg",
+        "/assets/images/carte/carte-au-poids_p06.jpg",
       ]}
     />
   );
